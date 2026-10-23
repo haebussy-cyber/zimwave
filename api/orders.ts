@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { api, getServiceClient, readJsonBody, sendError } from '../server/supabase';
+import { api, getServiceClient, readJsonBody, sendError } from '../server/supabase.js';
 
 const allowedMethods = new Set(['ecocash', 'paynow', 'onemoney', 'cod', 'store-pay']);
 const allowedDelivery = new Set([

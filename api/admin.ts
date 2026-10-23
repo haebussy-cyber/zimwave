@@ -1,6 +1,6 @@
 import { randomUUID } from 'node:crypto';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { api, getServiceClient, readJsonBody, sendError } from '../server/supabase';
+import { api, getServiceClient, readJsonBody, sendError } from '../server/supabase.js';
 import type { Product } from '../src/types';
 
 const imageMimeTypes = new Set(['image/jpeg', 'image/png', 'image/webp']);
